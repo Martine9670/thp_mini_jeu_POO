@@ -70,8 +70,27 @@ class HumanPlayer < Player
             puts "Laisse tomber, cette arme est moins bien que la tienne"
         end
     end
+
+    def search_health_pack
+        health_pack = rand(1..6)
+        if health_pack == 1
+            puts "Tu n'as rien trouvé..."
+        elsif health_pack >= 2 || health_pack <= 5
+            @life_points = @life_points + 50
+            
+            puts "Bravo ! Tu as trouvé un pack de +50 points de vie !"
+        elsif health_pack == 6
+            @life_points = @life_points + 80 
+
+            puts "Bravo !! Tu as trouvé un pack de +80 points de vie !!"
+        end 
+
+        if @life_points > 100
+            @life_points = 100
+        end
+    end
+
 end
 
-human = HumanPlayer.new("José")
 
 binding.pry
