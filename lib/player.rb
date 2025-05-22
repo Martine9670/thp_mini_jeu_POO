@@ -60,8 +60,18 @@ class HumanPlayer < Player
         return rand(1..6) * @weapon_level
     end
 
+    def search_weapon
+        new_weapon = rand(1..6)
+        puts "Tu as trouvé une arme de niveau #{new_weapon}"
+        if new_weapon > @weapon_level
+            @weapon_level = new_weapon
+            puts "Cette arme est bien mieux que ton arme actuelle !"
+        else 
+            puts "Laisse tomber, cette arme est moins bien que la tienne"
+        end
+    end
 end
 
-
+human = HumanPlayer.new("José")
 
 binding.pry
