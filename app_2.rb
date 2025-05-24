@@ -13,10 +13,12 @@ puts "------------------------------------------------------"
 # === Initialisation du joueur humain ===
 puts "\nQuel est ton prénom, vaillant combattant ?"
 print "> "
-user_name = gets.chomp.to_s
+user_name = gets.chomp
 user = HumanPlayer.new(user_name)
 
-puts "\nBienvenue, #{user} ! Prépare-toi au combat...\n"
+puts "\nBienvenue, #{user_name} ! Prépare-toi au combat...\n"
+
+puts "----------------------------------------------------\n"
 
 player1 = Player.new("Josiane")
 player2 = Player.new("José")
@@ -24,11 +26,11 @@ Players = [player1, player2]
 
 while user.life_points >0 && (player1.life_points > 0 || player2.life_points >0)
     user.show_state
-    # Affichage du menu
+  puts "\n---------- | MENU | ----------" # Affichage du menu
   puts "\nQuelle action veux-tu effectuer ?"
   puts "a - chercher une meilleure arme"
   puts "s - chercher à se soigner"
-  puts "attaquer un joueur en vue :"
+  puts "f - attaquer un joueur en vue :"
 
 # Affichage de l'état des ennemis
   if player1.life_points > 0
@@ -70,11 +72,11 @@ while user.life_points >0 && (player1.life_points > 0 || player2.life_points >0)
 end
 
 puts "\n ----- Fin du combat -----"
-if user.life_points > 0 && Players.all? { |player| player.life_points <= 0 }
-  puts "Bravo !! Tu as gagné !!"
-elsif user.life_points <= 0
-  puts "Loser ! T'es mort...!"
-else
-  puts "Le combat continue !"
-end
+    if user.life_points > 0 && Players.all? { |player| player.life_points <= 0 }
+    puts "Bravo !! Tu as gagné !!"
+    elsif user.life_points <= 0
+    puts "Loser ! T'es mort...!"
+    else
+    puts "Le combat continue !"
+    end
 
