@@ -43,5 +43,4 @@ elsif player2.life_points <= 0
   puts "Le joueur José a perdu !"
 end
 
-
 binding.pry

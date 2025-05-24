@@ -18,11 +18,11 @@ user = HumanPlayer.new(user_name)
 
 puts "\nBienvenue, #{user} ! Prépare-toi au combat...\n"
 
-enemy1 = Player.new("Josiane")
-enemy2 = Player.new("José")
-enemies = [enemy1, enemy2]
+player1 = Player.new("Josiane")
+player2 = Player.new("José")
+Players = [player1, player2]
 
-while user.life_points >0 && (enemy1.life_points > 0 || enemy2.life_points >0)
+while user.life_points >0 && (player1.life_points > 0 || player2.life_points >0)
     user.show_state
     # Affichage du menu
   puts "\nQuelle action veux-tu effectuer ?"
@@ -31,11 +31,11 @@ while user.life_points >0 && (enemy1.life_points > 0 || enemy2.life_points >0)
   puts "attaquer un joueur en vue :"
 
 # Affichage de l'état des ennemis
-  if enemy1.life_points > 0
-    puts "0 - #{enemy1.name} a #{enemy1.life_points} points de vie"
+  if player1.life_points > 0
+    puts "0 - #{player1.name} a #{player1.life_points} points de vie"
   end
-  if enemy2.life_points > 0
-    puts "1 - #{enemy2.name} a #{enemy2.life_points} points de vie"
+  if player2.life_points > 0
+    puts "1 - #{player2.name} a #{player2.life_points} points de vie"
   end
 
   # Lecture du choix de l'utilisateur
@@ -48,29 +48,29 @@ while user.life_points >0 && (enemy1.life_points > 0 || enemy2.life_points >0)
   when "s"
     user.search_health_pack
   when "0"
-    if enemy1.life_points > 0
-      user.attacks(enemy1)
+    if player1.life_points > 0
+      user.attacks(player1)
     else
-      puts "#{enemy1.name} est déjà mort !"
+      puts "#{player1.name} est déjà mort !"
     end
   when "1"
-    if enemy2.life_points > 0
-      user.attacks(enemy2)
+    if player2.life_points > 0
+      user.attacks(player2)
     else
-      puts "#{enemy2.name} est déjà mort !"
+      puts "#{player2.name} est déjà mort !"
     end
   else
     puts "Choix invalide, essaie encore."
   end
 
   # Tour des ennemis (s'ils sont encore en vie)
-  puts "\nLes autres joueurs t'attaquent !" if enemy1.life_points > 0 || enemy2.life_points > 0
-  enemy1.attacks(user) if enemy1.life_points > 0
-  enemy2.attacks(user) if enemy2.life_points > 0
+  puts "\nLes autres joueurs t'attaquent !" if player1.life_points > 0 || player2.life_points > 0
+  player1.attacks(user) if player1.life_points > 0
+  player2.attacks(user) if player2.life_points > 0
 end
 
 puts "\n ----- Fin du combat -----"
-if user.life_points > 0 && enemies.all? { |enemy| enemy.life_points <= 0 }
+if user.life_points > 0 && Players.all? { |player| player.life_points <= 0 }
   puts "Bravo !! Tu as gagné !!"
 elsif user.life_points <= 0
   puts "Loser ! T'es mort...!"
