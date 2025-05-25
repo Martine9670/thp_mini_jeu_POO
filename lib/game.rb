@@ -73,11 +73,13 @@ class Game
   end
 
   def end_game
-    puts "Le jeu est fini."
+    puts "\nLe combat est terminé !"
     if @human_player.life_points > 0
-      puts "Bravo, tu as gagné !"
+      puts "\n---- | Bravo, tu as gagné !! | ----"
+      puts ""
     else
-      puts "Loser... Tu as perdu."
+      puts "\nLoser... Tu as perdu."
+      puts ""
     end
   end
 
