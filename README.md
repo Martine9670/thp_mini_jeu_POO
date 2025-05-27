@@ -11,23 +11,32 @@ This project is a series of practical exercises designed to help you master Obje
 
 ## 🎯 Learning Objectives
 
-    Learn how to create and manipulate Ruby classes and objects
+✅ Créer et manipuler des classes Ruby
+Apprends à structurer ton code avec des classes et des objets.
 
-    Manage interactions between objects through methods
+🔁 Gérer les interactions entre objets via des méthodes
+Les joueurs, les ennemis, les combats : tout communique !
 
-    Implement an interactive game loop in the console
+🕹️ Implémenter une boucle de jeu interactive en console
+Le joueur fait des choix, les ennemis réagissent, le jeu évolue.
 
-    Handle collections of objects (arrays)
+📦 Manipuler des collections d’objets (tableaux)
+Suis les ennemis, ajoute-en, supprime-les, fais-les attaquer !
 
-    Manage game logic: player states, combat, health management
+💉 Gérer la logique de jeu : états du joueur, combats, soins
+Points de vie, attaque, soin, mort… le cœur d’un mini-RPG.
 
-    Implement a menu system and user choice handling
+🧭 Créer un menu et gérer les choix utilisateurs
+Permets à l’utilisateur de chercher des armes, se soigner, attaquer, etc.
 
-    Use instance methods and instance variables effectively
+🧠 Maîtriser méthodes et variables d’instance
+Stocke les états, mets à jour les objets au fil de la partie.
 
-    Work with concepts like inheritance (HumanPlayer < Player)
+🧬 Utiliser l’héritage (ex : HumanPlayer < Player)
+Réutilise et étends des classes pour gérer les différences entre humains et ennemis.
 
-    Handle errors and refine game logic (end of game, enemies in sight...)
+🛠️ Gérer les erreurs et peaufiner la logique du jeu
+Messages de fin, gestion des ennemis visibles, comportements inattendus.
 ---
 
 ## Auteur : Martine PINNA ##
