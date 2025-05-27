@@ -5,10 +5,10 @@ Bundler.require
 require_relative './lib/game'
 require_relative './lib/player'
 
-puts "------------------------------------------------------"
-puts "| Bienvenue sur 'ILS VEULENT TOUS MA POO' !!'        |"
-puts "| Le but du jeu est d'être le dernier survivant !    |"
-puts "------------------------------------------------------"
+puts "oooooooooooooooooooooooooooooooooooooooooooooo"
+puts "| À toi qui t'aventure sur ma POO...'        |"
+puts "| Sois prêt à combattre !!!                  |"
+puts "oooooooooooooooooooooooooooooooooooooooooooooo"
 
 # === Initialisation du joueur humain ===
 puts "\nQuel est ton prénom, vaillant combattant ?"
@@ -30,7 +30,7 @@ while user.life_points >0 && (player1.life_points > 0 || player2.life_points >0)
   puts "\nQuelle action veux-tu effectuer ?"
   puts "a - chercher une meilleure arme"
   puts "s - chercher à se soigner"
-  puts "f - attaquer un joueur en vue :"
+  puts "attaquer un joueur en vue :"
 
 # Affichage de l'état des ennemis
   if player1.life_points > 0

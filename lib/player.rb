@@ -65,9 +65,9 @@ class HumanPlayer < Player
         puts "Tu as trouvé une arme de niveau #{new_weapon}"
         if new_weapon > @weapon_level
             @weapon_level = new_weapon
-            puts "Cette arme est bien mieux que ton arme actuelle !"
+            puts "Bonne pioche ! Cette arme est + mieux bien que la tienne !"
         else 
-            puts "Laisse tomber, cette arme est moins bien que la tienne"
+            puts "Laisse tomber, cette arme est daubée..."
         end
     end
 
@@ -78,11 +78,11 @@ class HumanPlayer < Player
         elsif health_pack >= 2 || health_pack <= 5
             @life_points = @life_points + 50
             
-            puts "Bravo ! Tu as trouvé un pack de +50 points de vie !"
+            puts "Bravo ! T'as trouvé +50 points de vie !"
         elsif health_pack == 6
             @life_points = @life_points + 80 
 
-            puts "Bravo !! Tu as trouvé un pack de +80 points de vie !!"
+            puts "Bravo !! T'as trouvé +80 points de vie !!"
         end 
 
         if @life_points > 100
