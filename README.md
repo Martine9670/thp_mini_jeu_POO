@@ -1,8 +1,8 @@
-# 🕹️ Mini Jeu POO en Ruby — "Ils veulent tous ma POO"
+## 🕹️ Mini Jeu POO en Ruby — "Ils veulent tous ma POO"
 
 ---
 
-## 🚀 Introduction
+### 🚀 Introduction
 
 Welcome to "THEY ALL WANT MY OOP", a small text-based fighting game developed in Ruby using Object-Oriented Programming (OOP).
 The goal? Be the last survivor by battling multiple enemies!
@@ -40,6 +40,6 @@ Messages de fin, gestion des ennemis visibles, comportements inattendus.
 
 ---
 
-## Auteur : Martine PINNA ##
-## Github : Martine9670 ##
-## Discord : Martine PINNA ##
+### Auteur : Martine PINNA ###
+### Github : Martine9670 ###
+### Discord : Martine PINNA ###
