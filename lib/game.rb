@@ -37,9 +37,9 @@ class Game
 
   def menu
     puts "\n--- Quelle action veux-tu effectuer ? ---".colorize(:yellow)
-    puts "a - Chercher une meilleure arme".colorize(:green)
-    puts "s - Chercher à se soigner".colorize(:green)
-    puts "q - Quitter la partie".colorize(:red)
+    puts "a - Chercher une meilleure arme  🗡️ ".colorize(:green)
+    puts "s - Chercher à se soigner  💊".colorize(:green)
+    puts "q - Quitter la partie  🏳️".colorize(:red)
     puts "--- Attaquer un joueur en vue : ---".colorize(:yellow)
 
     alive_enemies.each_with_index do |ennemi, index|
@@ -72,7 +72,7 @@ class Game
 def enemies_attack
   return if @human_player.life_points <= 0 
 
-  puts "\n=== Les ennemis ripostent ! ===".colorize(:red)
+  puts "\n===  ⚔️  Les ennemis ripostent ! ⚔️  ===".colorize(:red)
   @enemies.each do |enemy|
     break if @human_player.life_points <= 0 # Attaque stoppée si le joueur humain est mort
     enemy.attacks(@human_player) if enemy.life_points > 0
@@ -85,7 +85,7 @@ end
       puts "\n---- | Excellent, tu as gagné !! | ----".colorize(:green)
       puts ""
     else
-      puts "\nLoser !! T'es mort...".colorize(:red)
+      puts "\nLoser !! T'es mort... 💀 ".colorize(:red)
       puts ""
     end
   end
