@@ -37,10 +37,10 @@ class Game
   end
 
   def menu
-    puts "\nQuelle action veux-tu effectuer ?"
-    puts "a - chercher une meilleure arme"
-    puts "s - chercher à se soigner"
-    puts "attaquer un joueur en vue :"
+    puts "\n--- Quelle action veux-tu effectuer ? ---"
+    puts "a - Chercher une meilleure arme"
+    puts "s - Chercher à se soigner"
+    puts "--- Attaquer un joueur en vue : ---"
 
     alive_enemies.each_with_index do |ennemi, index|
       puts "#{index} - #{ennemi.name} (#{ennemi.life_points} PV)"
