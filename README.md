@@ -1,4 +1,4 @@
-## 🕹️ Mini Jeu POO en Ruby — "Ils veulent tous ma POO"
+## 🕹️ Mini OOP Game in Ruby — "They all want my OOP"
 
 ---
 
