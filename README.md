@@ -11,35 +11,35 @@ This project is a series of practical exercises designed to help you master Obje
 
 ### 🎯 Learning Objectives
 
-✅ Créer et manipuler des classes Ruby
-Apprends à structurer ton code avec des classes et des objets.
+✅ Create and manipulate Ruby classes
+Understand how to structure your code using classes and objects.
 
-🔁 Gérer les interactions entre objets via des méthodes
-Les joueurs, les ennemis, les combats : tout communique !
+🔁 Manage interactions between objects through methods
+Players, enemies, and combat logic all communicate via methods.
 
-🕹️ Implémenter une boucle de jeu interactive en console
-Le joueur fait des choix, les ennemis réagissent, le jeu évolue.
+🕹️ Implement an interactive game loop in the console
+Let the player make choices, trigger actions, and control the game's flow.
 
-📦 Manipuler des collections d’objets (tableaux)
-Suis les ennemis, ajoute-en, supprime-les, fais-les attaquer !
+📦 Handle collections of objects (arrays)
+Track enemies, add new ones, remove them, and make them attack.
 
-💉 Gérer la logique de jeu : états du joueur, combats, soins
-Points de vie, attaque, soin, mort… le cœur d’un mini-RPG.
+💉 Manage game logic: player state, combat, health, and healing
+Control key gameplay elements like damage, health packs, and death.
 
-🧭 Créer un menu et gérer les choix utilisateurs
-Permets à l’utilisateur de chercher des armes, se soigner, attaquer, etc.
+🧭 Implement a menu system and user choice handling
+Offer options to search for weapons, heal, or attack visible enemies.
 
-🧠 Maîtriser méthodes et variables d’instance
-Stocke les états, mets à jour les objets au fil de la partie.
+🧠 Use instance methods and instance variables effectively
+Store and manage each player's unique state throughout the game.
 
-🧬 Utiliser l’héritage (ex : HumanPlayer < Player)
-Réutilise et étends des classes pour gérer les différences entre humains et ennemis.
+🧬 Apply inheritance (HumanPlayer < Player)
+Extend basic behavior to customize human players vs. enemies.
 
-🛠️ Gérer les erreurs et peaufiner la logique du jeu
-Messages de fin, gestion des ennemis visibles, comportements inattendus.
+🛠️ Handle errors and refine game mechanics
+Implement game over conditions, manage enemies in sight, and catch edge cases.
 
 ---
 
-### Auteur : Martine PINNA ###
+### Author : Martine PINNA ###
 ### Github : Martine9670 ###
 ### Discord : Martine PINNA ###
