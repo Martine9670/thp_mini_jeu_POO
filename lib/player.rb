@@ -10,21 +10,21 @@ class Player
     end
 
     def show_state   # Méthode pour afficher l'état actuel du joueur (nom et points de vie)
-        puts "#{name} a #{life_points} points de vie"  # Affiche une phrase résumant l'état du joueur
+        puts "\n#{name} a #{life_points} points de vie"  # Affiche une phrase résumant l'état du joueur
     end
 
     def gets_damage(damage) # Méthode appelée quand le joueur subit des dégâts
         @life_points -= damage  # On enlève le nombre de points de dégâts aux points de vie actuels
         if life_points <= 0  # Si ses points de vie tombent à 0 ou moins
-            puts "Le joueur #{name} a été tué !"  # On affiche un message indiquant qu’il est mort
+            puts "\nLe joueur #{name} a été tué !"  # On affiche un message indiquant qu’il est mort
         end
     end
 
      
     def attacks(other_player) # Méthode pour attaquer un autre joueur
-        puts "#{name} attaque #{other_player.name}" # Message d'annonce de l'attaque
+        puts "\n#{name} attaque #{other_player.name}" # Message d'annonce de l'attaque
         damage = compute_damage   # Calcule les dégâts
-        puts "Il lui inflige #{damage} points de dommages"  # Affiche les dégâts infligés
+        puts "\nIl lui inflige #{damage} points de dommages"  # Affiche les dégâts infligés
         other_player.gets_damage(damage)  # Applique les dégâts à l'autre joueur
     end
 
