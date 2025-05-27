@@ -40,6 +40,7 @@ class Game
     puts "\n--- Quelle action veux-tu effectuer ? ---"
     puts "a - Chercher une meilleure arme"
     puts "s - Chercher à se soigner"
+    puts "q - Quitter la partie"
     puts "--- Attaquer un joueur en vue : ---"
 
     alive_enemies.each_with_index do |ennemi, index|
@@ -53,6 +54,9 @@ class Game
       @human_player.search_weapon
     when "s"
       @human_player.search_health_pack
+    when "q"
+      puts "\nQuoi?? Tu fuis ?? Honte sur toi..."
+      exit
     when "0".."9"
       index = choice.to_i
       if enemy = alive_enemies[index]

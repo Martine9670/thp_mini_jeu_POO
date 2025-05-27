@@ -22,6 +22,7 @@ puts "\nBienvenue, #{user_name} ! Prépare-toi au combat...\n"
 
 loop do
     my_game.new_players_in_sight   # On ajoute de nouveaux adversaires
+    my_game.show_players
     puts "\n---------- | MENU | ----------" # Affichage du menu
     my_game.menu
     choice = gets&.chomp
@@ -30,5 +31,7 @@ loop do
     my_game.enemies_attack if my_game.is_still_ongoing? # Les ennemis attaquent
 
     break unless my_game.is_still_ongoing?
+    puts "\n--- Appuie sur Entrée pour continuer... ---"
+    gets
 end
 my_game.end_game
