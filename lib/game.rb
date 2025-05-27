@@ -36,11 +36,11 @@ class Game
   end
 
   def menu
-    puts "\n--- Quelle action veux-tu effectuer ? ---".colorize(:yellow)
+    puts "\nooooo - Choisis une action - ooooo".colorize(:cyan)
     puts "a - Chercher une meilleure arme  🗡️ ".colorize(:green)
     puts "s - Chercher à se soigner  💊".colorize(:green)
     puts "q - Quitter la partie  🏳️".colorize(:red)
-    puts "--- Attaquer un joueur en vue : ---".colorize(:yellow)
+    puts "--- Attaquer un ennemi ci-dessous : 👾 ".colorize(:yellow)
 
     alive_enemies.each_with_index do |ennemi, index|
       puts "\n#{index} - #{ennemi.name} (#{ennemi.life_points} PV)"

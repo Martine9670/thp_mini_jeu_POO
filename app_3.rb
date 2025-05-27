@@ -8,7 +8,7 @@ require 'colorize'
 
 
 puts "oooooooooooooooooooooooooooooooooooooooooooooo".colorize(:magenta)
-puts "|   À toi qui t'aventure sur ma POO...'      |".colorize(:cyan)
+puts "|   À toi qui t'aventure sur ma POO...       |".colorize(:cyan)
 puts "|       Sois prêt à combattre !!!            |".colorize(:cyan)
 puts "oooooooooooooooooooooooooooooooooooooooooooooo".colorize(:magenta)
 
@@ -24,7 +24,7 @@ puts "\nBienvenue, #{user_name} ! Prépare-toi au combat...\n".colorize(:green)
 loop do
     my_game.new_players_in_sight   # On ajoute de nouveaux adversaires
     my_game.show_players
-    puts "\n---------- | MENU | ----------".colorize(:magenta) # Affichage du menu
+    puts "\n---------- | PRENDS LES BONNES DÉCISIONS | ----------".colorize(:magenta) # Affichage du menu
     my_game.menu
     choice = gets&.chomp
     my_game.menu_choice(choice)

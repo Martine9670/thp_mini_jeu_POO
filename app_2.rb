@@ -26,11 +26,11 @@ Players = [player1, player2]
 
 while user.life_points >0 && (player1.life_points > 0 || player2.life_points >0)
     user.show_state
-  puts "\n---------- | MENU | ----------" # Affichage du menu
+  puts "\n---------- | FAIS TON CHOIX | ----------" # Affichage du menu
   puts "\nQuelle action veux-tu effectuer ?"
   puts "a - chercher une meilleure arme"
   puts "s - chercher à se soigner"
-  puts "attaquer un joueur en vue :"
+  puts "attaquer un ennemi en vue :"
 
 # Affichage de l'état des ennemis
   if player1.life_points > 0
