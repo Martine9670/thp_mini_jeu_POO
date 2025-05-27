@@ -89,5 +89,4 @@ class HumanPlayer < Player
             @life_points = 100
         end
     end
-
 end

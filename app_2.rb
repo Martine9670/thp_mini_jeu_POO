@@ -79,4 +79,3 @@ puts "\n ----- Fin du combat -----"
     else
     puts "Le combat continue !"
     end
-
