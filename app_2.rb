@@ -5,14 +5,14 @@ Bundler.require
 require_relative './lib/game'
 require_relative './lib/player'
 
-puts "oooooooooooooooooooooooooooooooooooooooooooooo"
-puts "|   À toi qui t'aventure sur ma POO...'      |"
-puts "|       Sois prêt à combattre !!!            |"
-puts "oooooooooooooooooooooooooooooooooooooooooooooo"
+puts "oooooooooooooooooooooooooooooooooooooooooooooo".colorize(:magenta)
+puts "|   À toi qui t'aventure sur ma POO...'      |".colorize(:cyan)
+puts "|       Sois prêt à combattre !!!            |".colorize(:cyan)
+puts "oooooooooooooooooooooooooooooooooooooooooooooo".colorize(:magenta)
 
 # === Initialisation du joueur humain ===
 puts "\nQuel est ton prénom, vaillant combattant ?"
-print "> "
+print "> ".colorize(:green)
 user_name = gets.chomp
 user = HumanPlayer.new(user_name)
 
