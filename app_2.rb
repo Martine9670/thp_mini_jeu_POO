@@ -73,9 +73,9 @@ end
 
 puts "\n ----- Fin du combat -----"
     if user.life_points > 0 && Players.all? { |player| player.life_points <= 0 }
-    puts "Bravo !! Tu as gagné !!"
+    puts "Excellent !! Tu as gagné !!"
     elsif user.life_points <= 0
-    puts "Loser ! T'es mort...!"
+    puts "Loser !! T'es mort...!"
     else
     puts "Le combat continue !"
     end

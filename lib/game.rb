@@ -55,7 +55,7 @@ class Game
     when "s"
       @human_player.search_health_pack
     when "q"
-      puts "\nQuoi?? Tu fuis ?? Honte sur toi..."
+      puts "\nQuoi?? Tu fuis ?? Honte sur toi...\n\n"
       exit
     when "0".."9"
       index = choice.to_i
@@ -83,10 +83,10 @@ end
   def end_game
     puts "\nLe combat est terminé !"
     if @human_player.life_points > 0
-      puts "\n---- | Bravo, tu as gagné !! | ----"
+      puts "\n---- | Excellent, tu as gagné !! | ----"
       puts ""
     else
-      puts "\nLoser... Tu as perdu."
+      puts "\nLoser !! T'es mort..."
       puts ""
     end
   end
