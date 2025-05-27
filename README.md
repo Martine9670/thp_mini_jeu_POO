@@ -9,7 +9,7 @@ The goal? Be the last survivor by battling multiple enemies!
 
 This project is a series of practical exercises designed to help you master Object-Oriented Programming in Ruby by creating a simple but fun game.
 
-## 🎯 Learning Objectives
+### 🎯 Learning Objectives
 
 ✅ Créer et manipuler des classes Ruby
 Apprends à structurer ton code avec des classes et des objets.
@@ -37,6 +37,7 @@ Réutilise et étends des classes pour gérer les différences entre humains et 
 
 🛠️ Gérer les erreurs et peaufiner la logique du jeu
 Messages de fin, gestion des ennemis visibles, comportements inattendus.
+
 ---
 
 ## Auteur : Martine PINNA ##
