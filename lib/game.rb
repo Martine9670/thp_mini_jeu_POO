@@ -88,9 +88,10 @@ class Game
       show_players
       menu
       print "> "
-      choice = gets.chomp
+      choice = gets&.chomp
       menu_choice(choice)
       enemies_attack if is_still_ongoing?
+      new_players_in_sight if @players_left > 0
     end
     end_game
   end
@@ -103,20 +104,28 @@ class Game
     end
   end
 
-  def roll_dice
-    result = rand(1..6)
-    puts "Résultat du dé : #{result}"
+def roll_dice
+  result = rand(1..6)
+  puts "Résultat du dé : #{result}"
 
-    case result
+  case result
     when 1
       puts "Aucun nouveau joueur adverse n'arrive."
     when 2..4
-      puts "Un nouvel ennemi arrive."
-      @enemies_in_sight << Player.new("Player_#{rand(1000..9999)}")
+      enemy = Player.new("Player_#{rand(1000..9999)}")
+      puts "Un nouvel ennemi arrive : #{enemy.name}"
+      @enemies_in_sight << enemy
+      @enemies << enemy
+      @players_left -= 1
     when 5..6
-      puts "Deux nouveaux ennemis arrivent."
-      @enemies_in_sight << Player.new("Player_#{rand(1000..9999)}")
-      @enemies_in_sight << Player.new("Player_#{rand(1000..9999)}")
+      2.times do
+        break if @players_left <= 0
+        enemy = Player.new("Player_#{rand(1000..9999)}")
+        puts "Un nouvel ennemi arrive : #{enemy.name}"
+        @enemies_in_sight << enemy
+        @enemies << enemy
+        @players_left -= 1
+      end
     end
   end
 end
